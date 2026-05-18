@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="SmartEnergyAPI.Tests/SmartEnergyAPI.Tests.csproj" Id="37ce98fc-7543-4c33-9620-64d6efc1080b" />
+  <Project Path="SmartEnergyAPI/SmartEnergyAPI.csproj" />
+</Solution>
