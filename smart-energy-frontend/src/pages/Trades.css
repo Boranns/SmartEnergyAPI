@@ -1,0 +1,83 @@
+.trades-page {
+  min-height: 100vh;
+  background: #0f0f1a;
+  color: white;
+}
+
+.trades-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+.trades-content h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 24px;
+}
+
+.empty {
+  text-align: center;
+  padding: 60px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.empty p {
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.empty button {
+  padding: 12px 24px;
+  background: rgba(0, 212, 170, 0.2);
+  border: 1px solid #00d4aa;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.2s;
+}
+
+.empty button:hover {
+  background: rgba(0, 212, 170, 0.4);
+}
+
+.trades-table {
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  overflow: hidden;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 16px 24px;
+  background: rgba(255,255,255,0.05);
+  color: rgba(255,255,255,0.5);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 16px 24px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  transition: background 0.2s;
+}
+
+.table-row:hover {
+  background: rgba(255,255,255,0.03);
+}
+
+.buy { color: #00d4aa; font-weight: bold; }
+.sell { color: #ff6b6b; font-weight: bold; }

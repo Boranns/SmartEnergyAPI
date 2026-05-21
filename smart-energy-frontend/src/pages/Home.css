@@ -1,0 +1,94 @@
+.home {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/København.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.home-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #1a1a2e;
+}
+
+.logo {
+  color: #00d4aa;
+  font-size: 26px;
+  font-style: italic;
+}
+
+.home-nav-links {
+  display: flex;
+  gap: 12px;
+}
+
+.home-nav-links button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: white;
+}
+
+.home-nav-links button:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.register-btn {
+  background: #00d4aa !important;
+  border-color: #00d4aa !important;
+  color: #1a1a2e !important;
+  font-weight: bold;
+}
+
+.register-btn:hover {
+  opacity: 0.85 !important;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 70px);
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.home-content h2 {
+  font-size: 52px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.home-content p {
+  font-size: 20px;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 32px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.cta-btn {
+  padding: 16px 40px;
+  background: #00d4aa;
+  border: none;
+  border-radius: 12px;
+  color: #1a1a2e;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 20px rgba(0, 212, 170, 0.4);
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0, 212, 170, 0.6);
+}

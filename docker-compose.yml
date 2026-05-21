@@ -1,0 +1,34 @@
+services:
+  database:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      SA_PASSWORD: "SmartEnergy123!"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqldata:/var/lib/sqlserver/data
+
+  backend:
+    build:
+      context: .
+      dockerfile: SmartEnergyAPI/Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=database;Database=SmartEnergyDB;User Id=sa;Password=SmartEnergy123!;TrustServerCertificate=True;
+    depends_on:
+      - database
+
+  frontend:
+    build:
+      context: ./smart-energy-frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+volumes:
+  sqldata:

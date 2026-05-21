@@ -1,0 +1,91 @@
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/København.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.auth-box {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  color: white;
+}
+
+.auth-box h1 {
+  font-size: 28px;
+  color: #00d4aa;
+  margin-bottom: 8px;
+}
+
+.auth-box h2 {
+  font-size: 20px;
+  margin-bottom: 24px;
+  color: rgba(255,255,255,0.8);
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.auth-box input::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.auth-box input:focus {
+  border-color: #00d4aa;
+}
+
+.auth-box button {
+  width: 100%;
+  padding: 12px;
+  background: #00d4aa;
+  border: none;
+  border-radius: 8px;
+  color: #1a1a2e;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.auth-box button:hover {
+  opacity: 0.85;
+}
+
+.auth-box p {
+  margin-top: 20px;
+  color: rgba(255,255,255,0.6);
+  text-align: center;
+}
+
+.auth-box a {
+  color: #00d4aa;
+  text-decoration: none;
+}
+
+.error {
+  background: rgba(255, 50, 50, 0.2);
+  border: 1px solid rgba(255, 50, 50, 0.4);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 16px;
+  color: #ff6b6b;
+  font-size: 14px;
+}
